@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Empresarial - Software de Gestão Completo</title>
+    <meta name="description" content="Software de gestão empresarial completo com vendas, ordens de serviço, cadastros e relatórios. Desenvolvido em WPF com padrão MVVM.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <i class="fas fa-chart-line nav__logo"></i>
+                <span class="nav__title">GestãoEmpresarial</span>
+            </div>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Início</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#features" class="nav__link">Funcionalidades</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#gallery" class="nav__link">Galeria</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#plans" class="nav__link">Planos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contato</a>
+                </li>
+            </ul>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://youtube.com/@gestaoempresarial-x5z?si=XRITS8sgNCJe_THP" target="_blank" class="btn btn--primary">
+                    <i class="fab fa-youtube"></i>
+                    Como Usar
+                </a>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="typewriter" data-text="GestãoEmpresarial: o software completo para impulsionar o sucesso do seu negócio."></span>
+                    </h1>
+                    <p class="hero__description">
+                        "GestãoEmpresarial: o poder de controlar tudo em um só lugar.
+                        Simples, completo e indispensável para o sucesso do seu negócio.
+                        Transforme sua rotina com uma software poderoso, simples e que
+                        entrega resultados de verdade."
+
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#features" class="btn btn--primary btn--large">
+                            <i class="fas fa-rocket"></i>
+                            Conhecer Funcionalidades
+                        </a>
+                        <a href="#plans" class="btn btn--secondary btn--large">
+                            <i class="fas fa-tag"></i>
+                            Ver Planos
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero__image">
+                    <div class="hero__image-container floating">
+                        <img src="assets/images/login-tela.png" alt="Interface do Gestão Empresarial" class="hero__img">
+                        <div class="hero__image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Presentation -->
+        <section class="product" id="product">
+            <div class="product__container container">
+                <div class="section__header">
+                    <h2 class="section__title">Apresentação do Produto</h2>
+                    <p class="section__description">
+                        Uma solução completa para sua empresa
+                    </p>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__info">
+                        <h3 class="product__title">Software GestãoEmpresarial</h3>
+                        <p class="product__description">
+                            Desenvolvido com tecnologia WPF e arquitetura MVVM,
+                            com banco de dados local MySQL com ótima performance, nosso software oferece
+                            uma interface moderna e intuitiva para gerenciar todos os aspectos do seu negócio.
+                            Com funcionalidades robustas e design responsivo, é a ferramenta ideal para
+                            empresas que buscam eficiência e organização.
+                        </p>
+
+                        <div class="product__highlights">
+                            <div class="highlight">
+                                <i class="fas fa-code highlight__icon"></i>
+                                <div class="highlight__content">
+                                    <h4 class="highlight__title">Tecnologia WPF</h4>
+                                    <p class="highlight__text">Interface moderna e responsiva</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-layer-group highlight__icon"></i>
+                                <div class="highlight__content">
+                                    <h4 class="highlight__title">Padrão MVVM</h4>
+                                    <p class="highlight__text">Arquitetura robusta e escalável</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-shield-alt highlight__icon"></i>
+                                <div class="highlight__content">
+                                    <h4 class="highlight__title">Seguro e Confiável</h4>
+                                    <p class="highlight__text">Dados protegidos e backup automático</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__image">
+                        <div class="product__image-container">
+                            <img src="assets/images/vendas-lista.png" alt="Dashboard do sistema" class="product__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Antes e Depois: a transformação com nosso software -->
+        <section class="product" id="product">
+            <div class="product__container container">
+                <div class="section__header">
+                    <h2 class="section__title">Por que devo escolher este software?</h2>
+                    <p class="section__description">
+                        Economia de tempo e custos
+                        Reduza processos manuais de horas para minutos
+                        Menos retrabalho significa menos erros e desperdício
+
+                    </p>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__info">
+                        <h3 class="product__title">Evite passar por situações assim novamente</h3>
+                        <p class="product__description">
+                            Antes: o cotidiano do caos
+                            - ✔️ O Senho Alguem levava em média 3 horas diárias só para lançar pedidos e atualizar estoque
+                            - ✔️ Usava pelo menos 5 planilhas diferentes para controlar vendas, compras e orçamentos
+                            - ✔️ Perdia vendas porque o produto aparecia “em estoque” na planilha, mas já tinha sido vendido
+                            - ✔️ Cada reclamação de cliente demandava consulta manual em vários sistemas ou papéis
+
+                        </p>
+                        <h3 class="product__title">
+                            “Do papel à praticidade: bem-vindo à nova era da sua empresa.”
+                        </h3>
+                        <p class="product__description">
+                            Depois: tudo mais fácil com "GestãoEmpresarial"
+                            - Tempo reduzido drasticamente
+                            - Cadastro único: produtos, clientes, ordens de serviço e faturamento em apenas um fluxo
+                            - Componentes em tempo real mostra quantidades disponíveis, pesquisas mostra vendas pendentes
+                            - Relatorios mostra resultados importantes para sua próxima decisão.
+                            - Alertas automáticos para estoque incompativel, evitando surpresas.
+                            - Satisfação do cliente saltou de 70% para 95% graças à agilidade e precisão.
+
+                        </p>
+
+                    </div>
+
+                    <div class="product__image">
+                        <div class="product__image-container">
+                            <img src="assets/images/vendas-lista.png" alt="Dashboard do sistema" class="product__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="features__container container">
+                <div class="section__header">
+                    <h2 class="section__title">Funcionalidades Principais</h2>
+                    <p class="section__description">
+                        Tudo que sua empresa precisa em um só lugar
+                    </p>
+                </div>
+
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="feature-card__title">Registro de Vendas</h3>
+                        <p class="feature-card__description">
+                            Sistema completo para registrar e gerenciar vendas com controle de produtos,
+                            quantidades, valores e descontos.
+                        </p>
+                        <div class="feature-card__tag">Fácil e rápido</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="feature-card__title">Ordens de Serviço</h3>
+                        <p class="feature-card__description">
+                            Criação e acompanhamento de ordens de serviço com status, responsáveis
+                            e histórico completo de atendimento.
+                        </p>
+                        <div class="feature-card__tag">Profissional</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="feature-card__title">Cadastro de Clientes</h3>
+                        <p class="feature-card__description">
+                            Gestão completa de clientes com informações detalhadas, histórico
+                            de compras e dados de contato.
+                        </p>
+                        <div class="feature-card__tag">Organização total</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="feature-card__title">Cadastro de Colaboradores</h3>
+                        <p class="feature-card__description">
+                            Controle de colaboradores com permissões, comissões e
+                            acompanhamento de vendas.
+                        </p>
+                        <div class="feature-card__tag">Completo</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3 class="feature-card__title">Gestão de Produtos</h3>
+                        <p class="feature-card__description">
+                            Cadastro de produtos e categorias com controle de estoque,
+                            preços e disponibilidade em tempo real.
+                        </p>
+                        <div class="feature-card__tag">Avançado</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="feature-card__title">Pesquisas Internas</h3>
+                        <p class="feature-card__description">
+                            Sistema de busca avançada em todos os cadastros para
+                            encontrar informações rapidamente.
+                        </p>
+                        <div class="feature-card__tag">Útil</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="feature-card__title">Relatórios Completos</h3>
+                        <p class="feature-card__description">
+                            Relatórios de vendas, comissões, produtos e
+                            ordens de serviço para análise de performance.
+                        </p>
+                        <div class="feature-card__tag">Analítico</div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3 class="feature-card__title">Históricos Detalhados</h3>
+                        <p class="feature-card__description">
+                            Acompanhe o histórico completo de vendas, produtos e
+                            ordens de serviço com filtros avançados.
+                        </p>
+                        <div class="feature-card__tag">Controle</div>
+                    </div>
+
+                    <div class="feature-card feature-card--pro">
+                        <div class="feature-card__icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="feature-card__title">WhatsApp Integration</h3>
+                        <p class="feature-card__description">
+                            Envio automático de mensagens WhatsApp para clientes
+                            sobre status das ordens de serviço.
+                        </p>
+                        <div class="feature-card__tag feature-card__tag--pro">Apenas na Versão Pro</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+            <div class="gallery__container container">
+                <div class="section__header">
+                    <h2 class="section__title">Imagens do Sistema</h2>
+                    <p class="section__description">
+                        Veja como é fácil e intuitivo usar nosso software
+                    </p>
+                </div>
+
+                <div class="gallery__carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="assets/images/login-tela.png" alt="Tela de Login do Sistema" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Tela de Login</h3>
+                                    <p>Interface moderna e segura para acesso ao sistema</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="assets/images/vendas-lista.png" alt="Lista de Vendas" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Gestão de Vendas</h3>
+                                    <p>Controle completo de todas as vendas realizadas</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="assets/images/vendas-criar.png" alt="Criação de Vendas" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Nova Venda</h3>
+                                    <p>Interface intuitiva para registrar novas vendas</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="assets/images/os-lista-claro.png" alt="Lista de Ordens de Serviço" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Ordens de Serviço</h3>
+                                    <p>Acompanhamento completo de todas as OS</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="assets/images/os-criar-escuro.png" alt="Criação de OS" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Nova Ordem de Serviço</h3>
+                                    <p>Criação rápida e detalhada de ordens de serviço</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="assets/images/vendas-escuro.png" alt="Vendas Tema Escuro" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Tema Escuro</h3>
+                                    <p>Interface adaptável com tema claro e escuro</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Imagem anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Próxima imagem">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <div class="carousel-indicators" id="carousel-indicators">
+                            <button class="carousel-indicator active" data-slide="0" aria-label="Ir para slide 1"></button>
+                            <button class="carousel-indicator" data-slide="1" aria-label="Ir para slide 2"></button>
+                            <button class="carousel-indicator" data-slide="2" aria-label="Ir para slide 3"></button>
+                            <button class="carousel-indicator" data-slide="3" aria-label="Ir para slide 4"></button>
+                            <button class="carousel-indicator" data-slide="4" aria-label="Ir para slide 5"></button>
+                            <button class="carousel-indicator" data-slide="5" aria-label="Ir para slide 6"></button>
+                        </div>
+                    </div>
+
+                    <div class="gallery__thumbnails">
+                        <div class="thumbnail active" data-slide="0">
+                            <img src="assets/images/login-tela.png" alt="Login">
+                        </div>
+                        <div class="thumbnail" data-slide="1">
+                            <img src="assets/images/vendas-lista.png" alt="Vendas">
+                        </div>
+                        <div class="thumbnail" data-slide="2">
+                            <img src="assets/images/vendas-criar.png" alt="Nova Venda">
+                        </div>
+                        <div class="thumbnail" data-slide="3">
+                            <img src="assets/images/os-lista-claro.png" alt="OS Lista">
+                        </div>
+                        <div class="thumbnail" data-slide="4">
+                            <img src="assets/images/os-criar-escuro.png" alt="Nova OS">
+                        </div>
+                        <div class="thumbnail" data-slide="5">
+                            <img src="assets/images/vendas-escuro.png" alt="Tema Escuro">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section class="plans" id="plans">
+            <div class="plans__container container">
+                <div class="section__header">
+                    <h2 class="section__title">Planos Disponíveis</h2>
+                    <p class="section__description">
+                        Escolha o plano ideal para sua empresa
+                    </p>
+                </div>
+
+                <div class="plans__grid">
+                    <div class="plan-card">
+                        <div class="plan-card__header">
+                            <h3 class="plan-card__title">Plano Mensal Essencial</h3>
+                            <div class="plan-card__price">
+                                <span class="plan-card__currency">R$</span>
+                                <span class="plan-card__amount">250,00</span>
+                                <span class="plan-card__period">mês</span>
+                            </div>
+                        </div>
+                        <div class="plan-card__features">
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Todas as funcionalidades básicas</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte técnico contínuo</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Atualizações automáticas</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Backup automático</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Treinamento online</span>
+                            </div>
+                            <div class="plan-card__feature plan-card__feature--disabled">
+                                <i class="fas fa-times"></i>
+                                <span>Integração WhatsApp</span>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5562998397943?text=Olá! Tenho interesse no Plano Mensal Essencial do GestãoEmpresarial."
+                           class="plan-card__button btn btn--secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Adquirir Plano
+                        </a>
+                    </div>
+
+                    <div class="plan-card plan-card--featured">
+                        <div class="plan-card__badge">Mais Popular</div>
+
+                        <div class="plan-card__header">
+                            <h3 class="plan-card__title">Plano Mensal Pro</h3>
+                            <div class="plan-card__price">
+                                <span class="plan-card__currency">R$</span>
+                                <span class="plan-card__amount">350,00</span>
+                                <span class="plan-card__period">/mês</span>
+                            </div>
+
+                            <p class="plan-card__whatsapp-included-notice">
+                                <i class="fas fa-money-bill-alt"></i>
+                                <small>Custo da API WhatsApp já **INCLUSO** no valor mensal.</small>
+                            </p>
+                        </div>
+
+                        <div class="plan-card__features">
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Todas as funcionalidades básicas</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte técnico contínuo</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Atualizações automáticas</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Backup automático em nuvem</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte prioritário</span>
+                            </div>
+                            <div class="plan-card__feature plan-card__feature--pro">
+                                <i class="fas fa-check"></i>
+                                <span>Integração WhatsApp <span class="included-tag">(Custo zero adicional!)</span></span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn--primary plan-card__button">
+                            ADQUIRIR PRO
+                        </button>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card__header">
+                            <h3 class="plan-card__title">Plano Vitalício Essencial</h3>
+                            <div class="plan-card__price">
+                                <span class="plan-card__currency">R$</span>
+                                <span class="plan-card__amount">4.000,0</span>
+                                <span class="plan-card__period">pagamento único</span>
+                            </div>
+                        </div>
+
+                        <div class="plan-card__features">
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Todas as funcionalidades básicas</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>1 ano de suporte técnico</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>1 ano de atualizações correções </span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Instalação e configuração</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Backup automático</span>
+                            </div>
+                            <div class="plan-card__feature plan-card__feature--disabled">
+                                <i class="fas fa-times"></i>
+                                <span>Integração WhatsApp</span>
+                            </div>
+                        </div>
+
+
+                        <a href="https://wa.me/5562998397943?text=Olá! Tenho interesse no Plano Vitalício Essencial do GestãoEmpresarial."
+                           class="plan-card__button btn btn--secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Adquirir Plano
+                        </a>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card__header">
+                            <h3 class="plan-card__title">Vitalício Pro</h3>
+                            <div class="plan-card__price">
+                                <span class="plan-card__currency">R$</span>
+                                <span class="plan-card__amount">5.000,0</span>
+                                <span class="plan-card__period">/pagamento único</span>
+                            </div>
+                        </div>
+
+                        <p class="plan-card__whatsapp-notice">
+                            <small>
+                                + R$ 110,00/mês para o serviço de Envio de Mensagens (Opcional)
+                            </small>
+                        </p>
+
+                        <div class="plan-card__features">
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Todas as funcionalidades básicas</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>1 ano de suporte técnico</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>1 ano de atualizações correções </span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Atualizações automáticas</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Backup automático em nuvem</span>
+                            </div>
+                            <div class="plan-card__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte prioritário</span>
+                            </div>
+                            <div class="plan-card__feature plan-card__feature--pro">
+                                <i class="fas fa-check"></i>
+                                <span>
+                                    Integração WhatsApp
+                                    <span class="whatsapp-cost-detail">
+                                        (Requer pagamento adicional de R$ 110/mês)
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <a href="https://wa.me/5562998397943?text=Olá! Tenho interesse no Plano Vitalício Pro do GestãoEmpresarial."
+                           class="plan-card__button btn btn--secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Adquirir Pro
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact__container container">
+                <div class="section__header">
+                    <h2 class="section__title">Contato e Suporte</h2>
+                    <p class="section__description">
+                        Estamos aqui para ajudar você
+                    </p>
+                </div>
+
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="contact__card-title">Horário de Atendimento</h3>
+                            <p class="contact__card-description">
+                                Segunda a Sexta-feira<br>
+                                Das 09h às 18h
+                            </p>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <p class="contact__card-description">
+                                Atendimento rápido e direto
+                            </p>
+                            <a href="https://wa.me/5562998397943" class="contact__card-link" target="_blank">
+                                +55 62 299839-7943
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <h3 class="contact__card-title">Telegram</h3>
+                            <p class="contact__card-description">
+                                Suporte técnico especializado
+                            </p>
+                            <a href="https://wa.me/5562998397943" class="contact__card-link" target="_blank">
+                                +55 62 299839-7943
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="contact__card-title">E-mail</h3>
+                            <p class="contact__card-description">
+                                Para dúvidas e informações
+                            </p>
+                            <a href="petabytetecnologia@gmail.com" class="contact__card-link">
+                                petabytetecnologia@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact__cta">
+                        <h3 class="contact__cta-title">Pronto para começar?</h3>
+                        <p class="contact__cta-description">
+                            Entre em contato conosco e descubra como o Gestão Empresarial
+                            pode transformar a gestão da sua empresa.
+                        </p>
+                        <div class="contact__cta-buttons">
+                            <a href="https://wa.me/5562998397943?text=Olá! Gostaria de saber mais sobre o Gestão Empresarial."
+                               class="btn btn--primary btn--large" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Falar no WhatsApp
+                            </a>
+                            <a href="https://youtube.com/@gestaoempresarial-x5z?si=XRITS8sgNCJe_THP"
+                               class="btn btn--secondary btn--large" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Ver Tutorial
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Gestão Empresarial</span>
+                    </div>
+                    <p class="footer__description">
+                        Software completo para gestão empresarial com tecnologia WPF e padrão MVVM.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4 class="footer__title">Produto</h4>
+                        <ul class="footer__list">
+                            <li><a href="#features" class="footer__link">Funcionalidades</a></li>
+                            <li><a href="#gallery" class="footer__link">Galeria</a></li>
+                            <li><a href="#plans" class="footer__link">Planos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__group">
+                        <h4 class="footer__title">Suporte</h4>
+                        <ul class="footer__list">
+                            <li><a href="#contact" class="footer__link">Contato</a></li>
+                            <li><a href="https://youtube.com/@gestaoempresarial-x5z?si=XRITS8sgNCJe_THP" class="footer__link">Como Usar</a></li>
+                            <li><a href="tel:+5562999687459" class="footer__link">WhatsApp</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__group">
+                        <h4 class="footer__title">Contato</h4>
+                        <ul class="footer__list">
+                            <li class="footer__contact">
+                                <i class="fas fa-phone"></i>
+                                <span>+55 62 99839-7943</span>
+                            </li>
+                            <li class="footer__contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>petabytetecnologia@gmail.com</span>
+                            </li>
+                            <li class="footer__contact">
+                                <i class="fas fa-clock"></i>
+                                <span>Seg-Sex: 09h às 18h</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 Gestão Empresarial. Todos os direitos reservados.
+                </p>
+                <div class="footer__social">
+                    <a href="https://wa.me/5562998397943" class="footer__social-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://wa.me/5562998397943" class="footer__social-link" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://youtube.com/@gestaoempresarial-x5z?si=XRITS8sgNCJe_THP" class="footer__social-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
